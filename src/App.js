@@ -5,8 +5,10 @@ import './styles/App.scss';
 import './styles/Header.scss';
 import './styles/Home.scss';
 import './styles/Footer.scss';
+import './styles/Contact.scss';
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
 
 
 function App() {
@@ -15,9 +17,8 @@ function App() {
       <Header></Header>
 
       <Routes>
-        <Route path="/" element={<Home></Home>}>
-
-        </Route>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/contacts" element={<Contact></Contact>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
